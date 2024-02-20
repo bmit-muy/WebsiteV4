@@ -1,0 +1,81 @@
+/**
+Qutes CSS
+*/
+
+/*
+Planed color scheme
+#fb8122
+#1d2228
+#e1e2e2
+*/
+
+.App-quotes-title{
+    color: #000000;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top:1.6rem ;
+}
+
+
+.App-quote{
+    color: #000000;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.App-button-quote{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 5.5rem;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.App-button-quote:hover{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 5.5rem;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+footer {
+        padding-top: 2rem;
+        position: static;
+        left: 0;
+        bottom: 0;
+        height: auto;
+        width: 100%;
+    }
+
+
+    .skill-item {
+        margin-bottom: 20px;
+      }
+      
+      .skill-name {
+        margin-bottom: 5px;
+      }
+      
+      .skill-progress {
+        height: 20px;
+      }
+      
+      .skill-badge {
+        margin-right: 10px;
+      }
+      
+      .progress-container {
+        display: flex;
+        align-items: center;
+      }
+      

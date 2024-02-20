@@ -1,0 +1,55 @@
+.terminal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+  }
+  
+  .terminal-window {
+    width: 50rem; /* Adjust width as needed */
+    height: 30rem; /* Adjust height as needed */
+    border: 0.1rem solid #00ff00;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    overflow-y: scroll;
+    background-color: #000;
+    color: #00ff00;
+    font-family: monospace;
+    max-width: 50rem; /* Limiting maximum width */
+    font-size: 1.6rem; /* Ensure consistent font size */
+  }
+  
+  .terminal input[type='text'] {
+    border: none;
+    background-color: #000; /* Set background color to match terminal */
+    outline: none;
+    color: inherit; /* Inherit the color from the parent */
+    font-family: inherit; /* Inherit the font from the parent */
+    font-size: inherit; /* Inherit the font size from the parent */
+    width: calc(100% - 20px); /* Adjust width here */
+  }
+  
+  .terminal input[type='text']:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .terminal input[type='text']::selection {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .cursor::after {
+    content: '';
+    display: inline-block;
+    width: 0.2rem;
+    height: 1.4rem;
+    background-color: #00ff00;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
