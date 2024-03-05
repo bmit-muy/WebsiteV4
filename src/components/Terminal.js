@@ -21,19 +21,62 @@ const TerminalInput = () => {
 
   const handleCommand = (command) => {
     // Convert command to lowercase and remove leading/trailing whitespace
-  const trimmedCommand = command.trim().toLowerCase();
+    const trimmedCommand = command.trim().toLowerCase();
 
     // Here you can implement logic to handle different commands
     if (trimmedCommand === 'clear' || trimmedCommand === 'cls') {
-      // Clear command
-      setOutput([]);
+        // Clear command
+        setOutput([]);
     } else if (trimmedCommand === 'help') {
-      // Display available commands
-      setOutput([...output, { type: 'output', text: "Available commands: 'help', 'clear'"}]);
+        // Display available commands
+        setOutput([...output, { type: 'output', text: "Available commands: 'help', 'clear', 'creator'"}]);
+    } else if (trimmedCommand === 'creator') {
+        // Display information about the creator
+        const creatorInfo = getCreatorInfo();
+        const asciiArt = (
+          <pre>
+                _________<br/>
+              / ======= \<br/>
+             / __________\<br/>
+            | ___________ |<br/>
+            | | -       | |<br/>
+            | |         | |<br/>
+            | |_________| |<br/>
+            \=____________/ {"art by brian macdonald" })<br/>
+            / """"""""""" \ <br/>
+           / ::::::::::::: \<br/>
+          (_________________)
+          </pre>
+        );
+        setOutput([
+            ...output,
+            { type: 'output', text: `Creator: ${creatorInfo.name}` },
+            { type: 'output', text: `Description: ${creatorInfo.description}` },
+            { type: 'output', text: `Age: ${creatorInfo.age}` },
+            { type: 'output', text: 'ASCII art:' },
+            { type: 'output', text: asciiArt },
+        ]);
     } else {
-      // For simplicity, let's just echo back the command for demonstration
-      setOutput([...output, { type: 'output', text: command + " is an unknown command" }]);
+        // For simplicity, let's just echo back the command for demonstration
+        setOutput([...output, { type: 'output', text: command + " is an unknown command" }]);
     }
+};
+
+
+
+  const getCreatorInfo = () => {
+    // Information about the creator
+    const name = "Yannick Mueller";
+    const description = "A description about the creator";
+
+    // Calculate age based on birthdate
+    const birthdate = new Date('2006-01-03'); 
+    const currentDate = new Date();
+    const ageDiffMs = currentDate - birthdate;
+    const ageDate = new Date(ageDiffMs); // miliseconds from epoch
+    const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+
+    return { name, description, age };
   };
 
   return (

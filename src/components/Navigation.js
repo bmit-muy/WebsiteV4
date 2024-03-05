@@ -13,7 +13,7 @@ function Navigation() {
             <Nav.Link href="/AboutMe">About Me</Nav.Link>
             <Nav.Link href="/KnowHow">Know How</Nav.Link>
             <Nav.Link href="/Projects">Projects</Nav.Link>
-            <Nav.Link href='/Form'>Contact</Nav.Link>
+            <Nav.Link href='/Contact'>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

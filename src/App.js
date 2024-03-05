@@ -6,6 +6,7 @@ import Home from './pages/home';
 import KnowHow from './pages/know_how';
 import AboutMe from './pages/about_me';
 import Projects from './pages/projects'
+import ContactPage from './pages/contact_page' 
 import './App.css';
 
 function App() {
@@ -16,9 +17,10 @@ function App() {
         <Routes>
           <Route index path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/AboutMe' element={<AboutMe />} />
+          <Route path='/aboutme' element={<AboutMe />} />
           <Route path='/KnowHow' element={ <KnowHow />} />
           <Route path='/Projects' element={ <Projects />} />
+          <Route path='/Contact' element={ <ContactPage/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

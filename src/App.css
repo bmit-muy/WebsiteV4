@@ -57,25 +57,71 @@ footer {
         width: 100%;
     }
 
+.custom-card {
+  width: 18rem;
+  margin-bottom: 20px; /* Adjust as needed */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    .skill-item {
-        margin-bottom: 20px;
-      }
-      
-      .skill-name {
-        margin-bottom: 5px;
-      }
-      
-      .skill-progress {
-        height: 20px;
-      }
-      
-      .skill-badge {
-        margin-right: 10px;
-      }
-      
-      .progress-container {
-        display: flex;
-        align-items: center;
-      }
-      
+.custom-card .card-body {
+  padding: 1.25rem;
+}
+
+.custom-card .card-title {
+  font-weight: bold;
+}
+
+.custom-card .card-text {
+  color: #666;
+}
+
+.custom-card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-display-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 7.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  justify-content: center;
+}
+
+.custom-card {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .card-display-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.skill-name {
+  width: 100px;
+}
+
+.skill-display {
+  width: 65%;
+}
+
+.skill-bar {
+  margin-bottom: 10px;
+}
+
+.skill-level {
+  height: 3rem;
+  background-color: #383434;
+  border-radius: 5rem;
+}
+
+.skill-level-bar {
+  height: 100%;
+  border-radius: 5rem;
+  background-color: #007bff;
+  padding: 0.5rem;
+}
+

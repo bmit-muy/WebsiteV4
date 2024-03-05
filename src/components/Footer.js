@@ -13,8 +13,8 @@ return (
                         Used to build The Website
                     </h6>
 
-                <p><a href="#!" className="text-reset">React</a></p>
-                <p><a href="#!" className="text-reset">Bootstrap</a></p>
+                <p><a href="https://react.dev/" className="text-reset">React</a></p>
+                <p><a href="https://getbootstrap.com/" className="text-reset">Bootstrap</a></p>
 
                 </div>
                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -32,15 +32,11 @@ return (
                     <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                     <p>
                         <i className="me-3"></i>   
-                        <a href="#Contact" className="text-reset">Contact</a>
+                        <a href="/Contact" className="text-reset">Contact</a>
                     </p>
                     <p>
                         <i className="me-3"></i> 
                         <a href="#Daten_Schutz" className="text-reset">Privacy</a>
-                    </p>
-                    <p>
-                        <i className="me-3"></i> 
-                        Tel: 079 842 71 44
                     </p>
                 </div>
             </div>
