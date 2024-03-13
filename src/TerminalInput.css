@@ -52,4 +52,50 @@
       opacity: 0;
     }
   }
+  .skill-display-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .skill-display {
+    background-color: #1a1a1a; /* Dark background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Maximum width */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skill-display h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .skill-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #444; /* Border between items */
+  }
+  
+  .skill-name {
+    font-size: 18px;
+    color: #fff; /* White text */
+  }
+  
+  .progress-container {
+    width: 70%; /* Adjust as needed */
+  }
+  
+  .custom-progress-bar {
+    height: 25px; /* Adjust height */
+    border-radius: 15px; /* Rounded corners */
+  }
+  
+  .custom-progress-bar .progress-bar {
+    border-radius: 15px; /* Rounded corners */
+  }
   

@@ -1,5 +1,3 @@
-// ContactForm.js
-
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 
@@ -12,11 +10,25 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Your form submission logic goes here
-    // ...
+    const formData = new FormData();
+    formData.append('name', senderName);
+    formData.append('email', senderEmail);
+    formData.append('message', messageContent);
 
-    // For demonstration purposes, we'll just set a success message
-    setResponse('Your message has been successfully submitted!');
+    try {
+      const response = await fetch('./contact.php', {
+        method: 'POST',
+        body: formData
+      });
+
+      if (response.ok) {
+        setResponse('Your message has been successfully submitted!');
+      } else {
+        throw new Error('Failed to submit the form.');
+      }
+    } catch (error) {
+      setResponse('An error occurred while submitting the form.');
+    }
   };
 
   return (
@@ -46,7 +58,7 @@ const ContactForm = () => {
           <Form.Label>Message</Form.Label>
           <Form.Control
             as="textarea"
-            rows={5}
+            rows={8}
             placeholder="Enter your message"
             value={messageContent}
             onChange={(e) => setMessageContent(e.target.value)}

@@ -7,11 +7,12 @@ import KnowHow from './pages/know_how';
 import AboutMe from './pages/about_me';
 import Projects from './pages/projects'
 import ContactPage from './pages/contact_page' 
+import Privacy from './pages/privacy';
 import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className='App-Body'>
       <BrowserRouter>
       <Navigation />
         <Routes>
@@ -21,10 +22,10 @@ function App() {
           <Route path='/KnowHow' element={ <KnowHow />} />
           <Route path='/Projects' element={ <Projects />} />
           <Route path='/Contact' element={ <ContactPage/>} />
+          <Route path='/Privacy' element={ <Privacy/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
-      
     </div>
   );
 }

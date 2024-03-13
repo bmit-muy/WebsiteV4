@@ -4,7 +4,7 @@ const AboutMe = () => {
     return ( 
     <div>
          <TerminalInput/>
-    </div> 
+    </div>
 );
 }
 

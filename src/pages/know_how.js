@@ -18,8 +18,12 @@ const KnowHow = () => {
 
   return (
     <div>
-      <h1>Know How</h1>
+      <h1 className='App-quotes-title'>Know How</h1>
       <SkillDisplay skillList={skillList} />
+      <div>
+        <br></br>
+        <br></br>
+      </div>
     </div>
   );
 };

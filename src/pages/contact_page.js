@@ -12,7 +12,7 @@ const ContactPage = () => {
           Please feel free to reach out to me with any questions, feedback, or inquiries you may have.
         </p>
         <p>Phone: +41 79 842 71 44</p>
-        <p>Address: 123 Main Street, City, Country</p>
+        <p>Address: Naglerwiesenstrasse 4, 8049 Zürich, Schweitz</p>
       </div>
       <div className="contact-form">
         <ContactForm />

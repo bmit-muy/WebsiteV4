@@ -21,11 +21,11 @@ return (
                     <h6 className="text-uppercase fw-bold mb-4">
                         links
                     </h6>
-
-                    <p><a href="#!" className="text-reset">Placeholder</a></p>
-                    <p><a href="#!" className="text-reset">Placeholder</a></p>
-                    <p><a href="#!" className="text-reset">Placeholder</a></p>
-                    <p><a href="#!" className="text-reset">Placeholder</a></p>
+                    <p><a href="/" className="text-reset">Home</a></p>
+                    <p><a href="/AboutMe" className="text-reset">About Me</a></p>
+                    <p><a href="/KnowHow" className="text-reset">Know How</a></p>
+                    <p><a href="/Projects" className="text-reset">Projects</a></p>
+                    <p><a href="/Contact" className="text-reset">Contact</a></p>
 
                 </div>
                 <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -36,7 +36,7 @@ return (
                     </p>
                     <p>
                         <i className="me-3"></i> 
-                        <a href="#Daten_Schutz" className="text-reset">Privacy</a>
+                        <a href="/Privacy" className="text-reset">Privacy</a>
                     </p>
                 </div>
             </div>
@@ -44,7 +44,7 @@ return (
         </div>
     </section>
     <div className="text-center p-4">
-        © 2024 Copyright:
+        © 2024 Copyright: 
         Yannick Müller
     </div>
 </footer>
